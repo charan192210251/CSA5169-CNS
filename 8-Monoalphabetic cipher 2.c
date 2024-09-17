@@ -55,9 +55,17 @@ void decrypt(const char *ciphertext, const char *cipher, char *plaintext) {
 }
 
 int main() {
-    const char *keyword = "CIPHER";
-    const char *plaintext = "HELLO WORLD";
-    
+    char keyword[100];
+    char plaintext[100];
+
+    printf("Enter the keyword: ");
+    fgets(keyword, sizeof(keyword), stdin);
+    keyword[strcspn(keyword, "\n")] = '\0'; // Remove trailing newline
+
+    printf("Enter the plaintext: ");
+    fgets(plaintext, sizeof(plaintext), stdin);
+    plaintext[strcspn(plaintext, "\n")] = '\0'; // Remove trailing newline
+
     char cipher[ALPHABET_SIZE];
     generateCipherSequence(keyword, cipher);
 
