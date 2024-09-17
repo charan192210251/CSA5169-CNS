@@ -1,54 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-
-// Function to find modular inverse of a under modulo m
-int modInverse(int a, int m) {
-    a = a % m;
-    for (int x = 1; x < m; x++) {
-        if ((a * x) % m == 1) {
-            return x;
-        }
-    }
-    return -1;
+char decryptChar(int c, int a, int b) 
+{
+ return ((a * (c - b)) % 26 + 26) % 26 + 'A';
 }
-
-// Function to decrypt the affine cipher
-void decryptAffine(char* ciphertext, int a, int b) {
-    int a_inv = modInverse(a, 26);
-    if (a_inv == -1) {
-        printf("Inverse of a doesn't exist, decryption not possible.\n");
-        return;
-    }
-
-    for (int i = 0; i < strlen(ciphertext); i++) {
-        if (ciphertext[i] != ' ') {
-            int y = ciphertext[i] - 'A';
-            int x = (a_inv * (y - b + 26)) % 26;
-            printf("%c", (x + 'A'));
-        } else {
-            printf(" ");
-        }
-    }
-    printf("\n");
-}
-
-int main() {
-    char ciphertext[100];
-    int a, b;
-
-    printf("Enter the ciphertext: ");
-    fgets(ciphertext, sizeof(ciphertext), stdin);
-    ciphertext[strcspn(ciphertext, "\n")] = '\0'; // Remove newline character
-
-    printf("Enter the value of a: ");
-    scanf("%d", &a);
-
-    printf("Enter the value of b: ");
-    scanf("%d", &b);
-
-    printf("Decrypted text: ");
-    decryptAffine(ciphertext, a, b);
-
-    return 0;
+int main() 
+{
+ char ciphertext[1000];
+ printf("Enter the ciphertext: ");
+ scanf("%s", ciphertext);
+ int mostFrequent = ciphertext[0];
+ int secondMostFrequent = ciphertext[1];
+ printf("Finding possible keys...\n");
+ for (int a = 1; a < 26; a++) 
+ {
+ for (int b = 0; b < 26; b++) 
+ {
+ if (decryptChar(mostFrequent, a, b) == mostFrequent &&
+ decryptChar(secondMostFrequent, a, b) == secondMostFrequent) 
+ {
+ printf("Possible key found: a = %d, b = %d\n", a, b);
+ }
+ }
+ }
+ return 0;
 }
