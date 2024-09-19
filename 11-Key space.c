@@ -17,6 +17,7 @@ int main() {
     scanf("%d", &n);
     if (n > 0 && n <= 25) {
         unsigned long long totalKeys = factorial(n);
+        //25
         int powerOf2_total = findPowerOf2(totalKeys);
         unsigned long long uniqueKeys = totalKeys / (8 * n);
         int powerOf2_unique = findPowerOf2(uniqueKeys);
