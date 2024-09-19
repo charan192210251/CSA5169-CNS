@@ -17,6 +17,8 @@ const double ENGLISH_FREQ[ALPHABET_SIZE] = {
 // Function to convert a character to its numeric representation (0-25)
 int charToNum(char c) {
     return toupper(c) - 'A';
+    //hello world
+    //5
 }
 
 // Function to convert a number (0-25) to its corresponding uppercase character
