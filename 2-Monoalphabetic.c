@@ -17,6 +17,8 @@ int main(){
 	for(int i=0;i<strlen(plain);i++){
 		c=plain[i];
 		if(c>='a'&&c<='z'){
+//qwertyuiopasdfghjklzxcvbnm
+//hello			
 			index=c-'a';
 			cipher[i]=sub[index];
 		}
