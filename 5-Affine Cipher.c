@@ -17,6 +17,10 @@ char affineEncrypt(char p, int a, int b) {
     return (char)(((a * (p - 'A') + b) % ALPHABET_SIZE) + 'A');
 }
 
+//3
+//5
+//CHARAN
+
 // Function to decrypt ciphertext using affine cipher
 char affineDecrypt(char c, int a, int b) {
     // Finding the modular inverse of a mod 26
