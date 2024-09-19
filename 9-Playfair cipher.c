@@ -17,6 +17,8 @@ void generateKeyTable(char key[], char keyTable[SIZE][SIZE]) {
     }
 
     for (i = 0; i < 26; i++) {
+        //playfair
+        //hide the gold
         if (i != 9 && dict[i] == 0) {
             keyTable[k / SIZE][k % SIZE] = 'a' + i;
             k++;
