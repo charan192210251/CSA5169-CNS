@@ -18,6 +18,7 @@ char numToChar(int num) {
 }
 
 //charan is a boy
+//5
 
 // Function to perform frequency analysis and return letter frequencies
 void analyzeFrequency(const char *text, int *frequency) {
