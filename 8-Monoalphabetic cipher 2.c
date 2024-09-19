@@ -17,6 +17,9 @@ void generateCipherSequence(const char *keyword, char cipher[ALPHABET_SIZE]) {
         }
     }
 
+//cipher
+//hello world
+    
     // Add remaining letters of the alphabet
     for (char ch = 'A'; ch <= 'Z'; ch++) {
         if (!used[ch - 'A']) {
