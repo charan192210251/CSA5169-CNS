@@ -17,6 +17,7 @@ void multiplyMatrices(int a[SIZE][SIZE], int b[SIZE][1], int result[SIZE][1]) {
 
 // Function to find the inverse of a 2x2 matrix modulo 26
 void inverseMatrix(int key[SIZE][SIZE], int inv[SIZE][SIZE]) {
+    //meet me at the usual place at ten rather than eight oclock
     int det = (key[0][0] * key[1][1] - key[0][1] * key[1][0]) % 26;
     if (det < 0) det += 26; // Ensure positive determinant
     int invDet = 0;
