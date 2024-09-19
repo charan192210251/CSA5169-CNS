@@ -17,6 +17,7 @@ void formatMessage(char *message, char *formatted) {
             formatted[j++] = toupper(message[i]);
         }
     }
+    //Must see you over Cadogan West. Coming at once.
     formatted[j] = '\0';
 }
 
