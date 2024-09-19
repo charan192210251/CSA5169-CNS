@@ -17,6 +17,9 @@ int charToNum(char c) {
 char numToChar(int num) {
     return num + 'A';
 }
+//send more money
+//13
+//9 0 1 7 23 15 21 14 11 11 2 8 9
 
 // Function to encrypt plaintext using one-time pad Vigenère cipher
 void encryptVigenere(char *text, int *keyStream, int keyLen) {
