@@ -17,6 +17,8 @@ int main(){
 			cipher[i]=(c-'A'+k)%26+'A';
 		}
 		else if(c>='a'&&c<='z'){
+//charan
+//3			
 			cipher[i]=(c-'a'+k)%26+'a';
 		}
 	}
