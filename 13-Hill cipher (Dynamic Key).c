@@ -17,6 +17,10 @@ int charToNum(char c) {
 
 // Function to convert a number (0-25) to its corresponding uppercase character
 char numToChar(int num) {
+    //meet me
+    //2
+    /* 1 2
+       3 4 */   
     return num + 'A';
 }
 
