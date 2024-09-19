@@ -17,6 +17,7 @@ int main()
  for (int b = 0; b < 26; b++) 
  {
  if (decryptChar(mostFrequent, a, b) == mostFrequent &&
+  //LBWVW
  decryptChar(secondMostFrequent, a, b) == secondMostFrequent) 
  {
  printf("Possible key found: a = %d, b = %d\n", a, b);
