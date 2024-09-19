@@ -17,5 +17,7 @@ int main(){
 		}
 	}
 	printf("Cipher text : %s",cipher);
+//VIGENERE
+//HELLO	
 	return 0;
 }
