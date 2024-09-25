@@ -17,6 +17,8 @@ uint64_t feistel(uint64_t half, uint64_t subkey) {
 }
 
 void des_encrypt(uint64_t *data, uint64_t key) {
+    //0x12345678ABCDEF01
+    //0x0123456789ABCDEF
     uint64_t left = (*data >> 32) & 0xFFFFFFFF;
     uint64_t right = *data & 0xFFFFFFFF;
     for (int i = 0; i < 16; i++) {
