@@ -16,8 +16,8 @@ void RSA_sign(const char* message, char* signature) {
 
 int main() {
     srand(time(0)); // Seed for randomness
-
     char message[100];
+    //HelloWorld
     char dsa_signature1[100], dsa_signature2[100];
     char rsa_signature1[100], rsa_signature2[100];
 
