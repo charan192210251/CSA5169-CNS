@@ -17,6 +17,7 @@ int main() {
     long e, n, message, encrypted;
 
     // Input public key e and modulus n
+    // e and n=7 33. message=4. 
     printf("Enter public key e and modulus n: ");
     scanf("%ld %ld", &e, &n);
 
