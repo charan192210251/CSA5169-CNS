@@ -17,6 +17,7 @@ int modInverse(int a, int m) {
             return x;
         }
     }
+    //TEST
     return -1; // No modular inverse found
 }
 
