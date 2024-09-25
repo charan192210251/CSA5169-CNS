@@ -17,6 +17,7 @@ long power_mod(long base, long exp, long n) {
 int main() {
     long p, q, n, phi, e, d, message, encrypted, decrypted;
 
+    //p and q = 61 53. e=17. d=2753. message=65.
     // Input prime numbers p and q
     printf("Enter prime numbers p and q: ");
     scanf("%ld %ld", &p, &q);
