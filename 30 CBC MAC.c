@@ -16,8 +16,8 @@ void cbcMacTwoBlocks(const char *key, const char *message, char *mac, int block_
     cbcMacOneBlock(key, message, t, block_size);
     xorBlocks(message + block_size, t, mac, block_size);
 }
-
 int main() {
+    //1234567812345678
     int block_size = 8; 
     char key[block_size] = "abcdefgh"; // Hardcoded key
     char message[2 * block_size + 1]; // +1 for null terminator
