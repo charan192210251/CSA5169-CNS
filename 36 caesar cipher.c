@@ -17,6 +17,7 @@ void encrypt_message(char *plaintext, int a, int b, char *ciphertext) {
         ciphertext[i] = affine_encrypt(a, b, plaintext[i]);
     }
     ciphertext[strlen(plaintext)] = '\0';
+    //HELLO AFFINE CIPHER
 }
 
 int main() {
