@@ -17,6 +17,8 @@ void calculate_letter_frequency(const char *text, int *frequency) {
 
 // Function to decrypt the ciphertext using the derived key
 void decrypt_with_key(const char *ciphertext, const int *key, char *plaintext) {
+    // fkdudq
+    //e
     for (int i = 0; ciphertext[i] != '\0'; i++) {
         if (isalpha(ciphertext[i])) {
             char base_char = islower(ciphertext[i]) ? 'a' : 'A';
