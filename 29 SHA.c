@@ -16,8 +16,8 @@ int allNonZero(int state[SIZE][SIZE]) {
             if (state[i][j] == 0) return 0; // Found a zero lane
     return 1; // All lanes have at least one nonzero bit
 }
-
 void randomSetBits(int state[SIZE][SIZE]) {
+    //100
     int lane = rand() % SIZE;
     int bit = rand() % 64; // 64 bits in a lane
     state[lane][0] |= (1ULL << bit); // Set a random bit in a random lane
