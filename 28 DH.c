@@ -15,11 +15,9 @@ long power_mod(long base, long exp, long q) {
 
 int main() {
     long a, b, q, g, A, B, shared_secret;
-
-    // Input public parameters
     printf("Enter prime number q and base g: ");
     scanf("%ld %ld", &q, &g);
-
+//q and g=23 5. a=6. b=15.
     // Input secret numbers for Alice and Bob
     printf("Enter Alice's secret number a: ");
     scanf("%ld", &a);
