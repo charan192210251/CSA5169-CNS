@@ -17,6 +17,7 @@ void calculateFrequency(const char *ciphertext, int *frequency) {
 
 void generateFrequencyTable(const int *frequency, char *substitution) {
     char mostFrequent[ALPHABET_SIZE];
+    //RLC YWZMHR
     int freqIndices[ALPHABET_SIZE];
     for (int i = 0; i < ALPHABET_SIZE; i++) {
         freqIndices[i] = i;
