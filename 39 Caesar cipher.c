@@ -17,6 +17,7 @@ void calculateFrequency(char *ciphertext, int *frequency) {
 }
 
 void decryptWithShift(char *ciphertext, int shift, char *plaintext) {
+    //hhi dgf nol
     for (int i = 0; ciphertext[i] != '\0'; i++) {
         char ch = ciphertext[i];
         if (ch >= 'A' && ch <= 'Z') {
