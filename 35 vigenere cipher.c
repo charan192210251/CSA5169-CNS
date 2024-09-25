@@ -17,6 +17,7 @@ void vigenere_encrypt(char *plaintext, int *key, char *ciphertext, int length) {
     for (int i = 0; i < length; i++) {
         if (plaintext[i] >= 'A' && plaintext[i] <= 'Z') {
             ciphertext[i] = 'A' + (plaintext[i] - 'A' + key[i]) % ALPHABET_SIZE;
+            //HELLO VIGENERE CIPHER
         } else if (plaintext[i] >= 'a' && plaintext[i] <= 'z') {
             ciphertext[i] = 'a' + (plaintext[i] - 'a' + key[i]) % ALPHABET_SIZE;
         } else {
