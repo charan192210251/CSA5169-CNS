@@ -16,8 +16,8 @@ void ecb_encrypt(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext, int bloc
         memcpy(ciphertext + i * BLOCK_SIZE, plaintext + i * BLOCK_SIZE, BLOCK_SIZE);
     }
 }
-
 void cbc_encrypt(uint8_t *plaintext, uint8_t *key, uint8_t *ciphertext, int blocks) {
+    // Hello!
     uint8_t iv[BLOCK_SIZE] = {0};
     for (int i = 0; i < blocks; i++) {
         uint8_t temp[BLOCK_SIZE];
