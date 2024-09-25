@@ -16,9 +16,8 @@ void xorWithConstant(unsigned char *input, int block_size, int block_bits) {
 
 void generateSubkeys(unsigned char *blockCipherOutput, unsigned char *K1, unsigned char *K2, int block_size, int block_bits) {
     leftShift(blockCipherOutput, K1, block_size);
-
-    // If MSB of blockCipherOutput is 1, XOR with the constant
     if (blockCipherOutput[0] & 0x80) {
+        //64
         xorWithConstant(K1, block_size, block_bits);
     }
 
