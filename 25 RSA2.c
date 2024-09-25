@@ -17,7 +17,7 @@ int main() {
     scanf("%ld", &n);
     printf("Enter public key e: ");
     scanf("%ld", &e);
-    //n=221. e=17. d=2753. message=65
+    //n=221. e=5. plaintext=13.
     printf("Enter a plaintext block: ");
     scanf("%ld", &plaintext_block);
 
